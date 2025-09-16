@@ -1,0 +1,63 @@
+Windows PowerShell
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Попробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)
+
+PS C:\Users\Student2> mkdir huuuui
+
+
+    Каталог: C:\Users\Student2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02.09.2025     14:25                huuuui
+
+
+PS C:\Users\Student2> cd huuuui
+PS C:\Users\Student2\huuuui> python -m venv .venv
+PS C:\Users\Student2\huuuui> .venv\Scripts\Activate
+(.venv) PS C:\Users\Student2\huuuui> where python
+(.venv) PS C:\Users\Student2\huuuui> pip install requests
+Collecting requests
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting charset_normalizer<4,>=2 (from requests)
+  Downloading charset_normalizer-3.4.3-cp313-cp313-win_amd64.whl.metadata (37 kB)
+Collecting idna<4,>=2.5 (from requests)
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3<3,>=1.21.1 (from requests)
+  Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests)
+  Downloading certifi-2025.8.3-py3-none-any.whl.metadata (2.4 kB)
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading certifi-2025.8.3-py3-none-any.whl (161 kB)
+Downloading charset_normalizer-3.4.3-cp313-cp313-win_amd64.whl (107 kB)
+Using cached idna-3.10-py3-none-any.whl (70 kB)
+Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+Installing collected packages: urllib3, idna, charset_normalizer, certifi, requests
+Successfully installed certifi-2025.8.3 charset_normalizer-3.4.3 idna-3.10 requests-2.32.5 urllib3-2.5.0
+
+[notice] A new release of pip is available: 24.2 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(.venv) PS C:\Users\Student2\huuuui> mkdir src, tests, data
+
+
+    Каталог: C:\Users\Student2\huuuui
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02.09.2025     14:26                src
+d-----        02.09.2025     14:26                tests
+d-----        02.09.2025     14:26                data
+
+
+(.venv) PS C:\Users\Student2\huuuui> pip freeze > requirements.txt
+(.venv) PS C:\Users\Student2\huuuui> Get-Content requirements.txt
+certifi==2025.8.3
+charset-normalizer==3.4.3
+idna==3.10
+requests==2.32.5
+urllib3==2.5.0
+(.venv) PS C:\Users\Student2\huuuui>
+
