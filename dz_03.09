@@ -1,0 +1,277 @@
+PS C:\Users\Student1-2\DZ> Get-Ciminstance -ClassName Win32_VideoController
+
+Caption                      : Intel(R) HD Graphics 530
+Description                  : Intel(R) HD Graphics 530
+InstallDate                  : 
+Name                         : Intel(R) HD Graphics 530
+Status                       : OK
+Availability                 : 3
+ConfigManagerErrorCode       : 0
+ConfigManagerUserConfig      : False
+CreationClassName            : Win32_VideoController
+DeviceID                     : VideoController1
+ErrorCleared                 : 
+ErrorDescription             : 
+LastErrorCode                : 
+PNPDeviceID                  : PCI\VEN_8086&DEV_1912&SUBSYS_310217AA&REV_06\3&11583659&0&10
+PowerManagementCapabilities  : 
+PowerManagementSupported     : 
+StatusInfo                   : 
+SystemCreationClassName      : Win32_ComputerSystem
+SystemName                   : DESKTOP-8NK7C7U
+MaxNumberControlled          : 
+ProtocolSupported            : 
+TimeOfLastReset              : 
+AcceleratorCapabilities      : 
+CapabilityDescriptions       : 
+CurrentBitsPerPixel          : 32
+CurrentHorizontalResolution  : 1920
+CurrentNumberOfColors        : 4294967296
+CurrentNumberOfColumns       : 0
+CurrentNumberOfRows          : 0
+CurrentRefreshRate           : 60
+CurrentScanMode              : 4
+CurrentVerticalResolution    : 1080
+MaxMemorySupported           : 
+MaxRefreshRate               : 75
+MinRefreshRate               : 59
+NumberOfVideoPages           : 
+VideoMemoryType              : 2
+VideoProcessor               : Intel(R) HD Graphics Family
+NumberOfColorPlanes          : 
+VideoArchitecture            : 5
+VideoMode                    : 
+AdapterCompatibility         : Intel Corporation
+AdapterDACType               : Internal
+AdapterRAM                   : 1073741824
+ColorTableEntries            : 
+DeviceSpecificPens           : 
+DitherType                   : 0
+DriverDate                   : 03.02.2022 3:00:00
+DriverVersion                : 30.0.101.1340
+ICMIntent                    : 
+ICMMethod                    : 
+InfFilename                  : oem0.inf
+InfSection                   : iSKLD_w10_DS
+InstalledDisplayDrivers      : C:\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_1dc9fc8d5e442f6a\igdumdim64.dll,C:\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_1dc9fc8 
+                               d5e442f6a\igd10iumd64.dll,C:\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_1dc9fc8d5e442f6a\igd10iumd64.dll,C:\Windows\System32\DriverStore\FileRepository 
+                               \iigd_dch.inf_amd64_1dc9fc8d5e442f6a\igd12umd64.dll
+Monochrome                   : False
+ReservedSystemPaletteEntries : 
+SpecificationVersion         : 
+SystemPaletteEntries         : 
+VideoModeDescription         : Цвета: 1920 x 1080 x 4294967296
+PSComputerName               : 
+
+PS C:\Users\Student1-2\DZ> Get-Ciminstance -ClassName Win32_Processor  
+
+DeviceID Name                                    Caption                              MaxClockSpeed SocketDesignation Manufacturer
+-------- ----                                    -------                              ------------- ----------------- ------------
+CPU0     Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz Intel64 Family 6 Model 94 Stepping 3 3192          U3E1              GenuineIntel
+
+PS C:\Users\Student1-2\DZ> Get-Ciminstance -ClassName Win32_Processor | Select-Object Name        
+
+Name
+----
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+PS C:\Users\Student1-2\DZ> Get-Ciminstance -ClassName Win32_DiskDrive | Select-Object Name
+
+Name
+----
+\\.\PHYSICALDRIVE0
+\\.\PHYSICALDRIVE1
+
+PS C:\Users\Student1-2\DZ> Get-Ciminstance -ClassName Win32_DiskDrive
+
+DeviceID           Caption                Partitions Size         Model
+--------           -------                ---------- ----         -----
+\\.\PHYSICALDRIVE0 WDC WD5000AAKX-60U6AA0 2          500105249280 WDC WD5000AAKX-60U6AA0
+\\.\PHYSICALDRIVE1 VTB256GSSD1            3          256052966400 VTB256GSSD1
+
+PS C:\Users\Student1-2\DZ> Get-ComputerInfo
+
+WindowsBuildLabEx                                       : 19041.1.amd64fre.vb_release.191206-1406
+WindowsCurrentVersion                                   : 6.3
+WindowsEditionId                                        : EnterpriseS
+WindowsInstallationType                                 : Client
+WindowsInstallDateFromRegistry                          : 01.02.2025 14:02:28
+WindowsProductId                                        : 00425-00000-00002-AA843
+WindowsProductName                                      : Windows 10 Enterprise LTSC 2021
+WindowsRegisteredOrganization                           : 
+WindowsRegisteredOwner                                  : Admin
+WindowsSystemRoot                                       : C:\Windows
+WindowsVersion                                          : 2009
+WindowsUBR                                              : 5965
+BiosCharacteristics                                     : {7, 11, 12, 15…}
+BiosBIOSVersion                                         : {LENOVO - 1350, M16KT53A, American Megatrends - 5000C}
+BiosBuildNumber                                         : 
+BiosCaption                                             : M16KT53A
+BiosCodeSet                                             : 
+BiosCurrentLanguage                                     : enUS
+BiosDescription                                         : M16KT53A
+BiosEmbeddedControllerMajorVersion                      : 255
+BiosEmbeddedControllerMinorVersion                      : 255
+BiosFirmwareType                                        : Uefi
+BiosIdentificationCode                                  : 
+BiosInstallableLanguages                                : 3
+BiosInstallDate                                         : 
+BiosLanguageEdition                                     : 
+BiosListOfLanguages                                     : {enUS, frFR, zhCN}
+BiosManufacturer                                        : LENOVO
+BiosName                                                : M16KT53A
+BiosOtherTargetOS                                       : 
+BiosPrimaryBIOS                                         : True
+BiosReleaseDate                                         : 27.11.2018 3:00:00
+BiosSerialNumber                                        : S4KB7273
+BiosSMBIOSBIOSVersion                                   : M16KT53A
+BiosSMBIOSMajorVersion                                  : 3
+BiosSMBIOSMinorVersion                                  : 0
+BiosSMBIOSPresent                                       : True
+BiosSoftwareElementState                                : Running
+BiosStatus                                              : OK
+BiosSystemBiosMajorVersion                              : 0
+BiosSystemBiosMinorVersion                              : 53
+BiosTargetOperatingSystem                               : 0
+BiosVersion                                             : LENOVO - 1350
+CsAdminPasswordStatus                                   : Disabled
+CsAutomaticManagedPagefile                              : True
+CsAutomaticResetBootOption                              : True
+CsAutomaticResetCapability                              : True
+CsBootOptionOnLimit                                     : 
+CsBootOptionOnWatchDog                                  : 
+CsBootROMSupported                                      : True
+CsBootStatus                                            : {0, 0, 0, 0…}
+CsBootupState                                           : Normal boot
+CsCaption                                               : DESKTOP-8NK7C7U
+CsChassisBootupState                                    : Safe
+CsChassisSKUNumber                                      : Default string
+CsCurrentTimeZone                                       : 180
+CsDaylightInEffect                                      : 
+CsDescription                                           : AT/AT COMPATIBLE
+CsDNSHostName                                           : DESKTOP-8NK7C7U
+CsDomain                                                : WORKGROUP
+CsDomainRole                                            : StandaloneWorkstation
+CsEnableDaylightSavingsTime                             : True
+CsFrontPanelResetStatus                                 : NotImplemented
+CsHypervisorPresent                                     : True
+CsInfraredSupported                                     : False
+CsInitialLoadInfo                                       : 
+CsInstallDate                                           : 
+CsKeyboardPasswordStatus                                : Enabled
+CsLastLoadInfo                                          : 
+CsManufacturer                                          : LENOVO
+CsModel                                                 : 10M8S95X00
+CsName                                                  : DESKTOP-8NK7C7U
+CsNetworkAdapters                                       : {Ethernet, Ethernet 2, vEthernet (WSL)}
+CsNetworkServerModeEnabled                              : True
+CsNumberOfLogicalProcessors                             : 4
+CsNumberOfProcessors                                    : 1
+CsProcessors                                            : {Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz}
+CsOEMStringArray                                        : {LENOVO ThinkCentre Embedded Controller -[N/A]-, LENOVO ThinkCentre BIOS Boot Block Revision 1.53, Lenovo Service Engine Not Supported, INVALID… 
+                                                          }
+CsPartOfDomain                                          : False
+CsPauseAfterReset                                       : -1
+CsPCSystemType                                          : Desktop
+CsPCSystemTypeEx                                        : Desktop
+CsPowerManagementCapabilities                           : 
+CsPowerManagementSupported                              : 
+CsPowerOnPasswordStatus                                 : Disabled
+CsPowerState                                            : Unknown
+CsPowerSupplyState                                      : Safe
+CsPrimaryOwnerContact                                   : 
+CsPrimaryOwnerName                                      : Admin
+CsResetCapability                                       : Other
+CsResetCount                                            : -1
+CsResetLimit                                            : -1
+CsRoles                                                 : {LM_Workstation, LM_Server, NT, Potential_Browser…}
+CsStatus                                                : OK
+CsSupportContactDescription                             : 
+CsSystemFamily                                          : ThinkCentre M710s
+CsSystemSKUNumber                                       : LENOVO_MT_10M8_BU_Think_FM_ThinkCentre M710s
+CsSystemType                                            : x64-based PC
+CsThermalState                                          : Safe
+CsTotalPhysicalMemory                                   : 8492134400
+CsPhysicallyInstalledMemory                             : 8388608
+CsUserName                                              : DESKTOP-8NK7C7U\Student1-2
+CsWakeUpType                                            : PowerSwitch
+CsWorkgroup                                             : WORKGROUP
+OsName                                                  : Майкрософт Windows 10 Корпоративная LTSC
+OsType                                                  : WINNT
+OsOperatingSystemSKU                                    : 125
+OsVersion                                               : 10.0.19044
+OsCSDVersion                                            : 
+OsBuildNumber                                           : 19044
+OsHotFixes                                              : {KB5054978, KB5010472, KB5003791, KB5011048…}
+OsBootDevice                                            : \Device\HarddiskVolume3
+OsSystemDevice                                          : \Device\HarddiskVolume5
+OsSystemDirectory                                       : C:\Windows\system32
+OsSystemDrive                                           : C:
+OsWindowsDirectory                                      : C:\Windows
+OsCountryCode                                           : 7
+OsCurrentTimeZone                                       : 180
+OsLocaleID                                              : 0419
+OsLocale                                                : ru-RU
+OsLocalDateTime                                         : 03.09.2025 10:31:48
+OsLastBootUpTime                                        : 03.09.2025 10:11:32
+OsUptime                                                : 00:20:15.9036067
+OsBuildType                                             : Multiprocessor Free
+OsCodeSet                                               : 1251
+OsDataExecutionPreventionAvailable                      : True
+OsDataExecutionPrevention32BitApplications              : True
+OsDataExecutionPreventionDrivers                        : True
+OsDataExecutionPreventionSupportPolicy                  : OptIn
+OsDebug                                                 : False
+OsDistributed                                           : False
+OsEncryptionLevel                                       : 256
+OsForegroundApplicationBoost                            : Maximum
+OsTotalVisibleMemorySize                                : 8293100
+OsFreePhysicalMemory                                    : 4326588
+OsTotalVirtualMemorySize                                : 9603820
+OsFreeVirtualMemory                                     : 5793432
+OsInUseVirtualMemory                                    : 3810388
+OsTotalSwapSpaceSize                                    : 
+OsSizeStoredInPagingFiles                               : 1310720
+OsFreeSpaceInPagingFiles                                : 1310720
+OsPagingFiles                                           : {C:\pagefile.sys}
+OsHardwareAbstractionLayer                              : 10.0.19041.5553
+OsInstallDate                                           : 01.02.2025 17:02:28
+OsManufacturer                                          : Microsoft Corporation
+OsMaxNumberOfProcesses                                  : 4294967295
+OsMaxProcessMemorySize                                  : 137438953344
+OsMuiLanguages                                          : {ru-RU}
+OsNumberOfLicensedUsers                                 : 
+OsNumberOfProcesses                                     : 156
+OsNumberOfUsers                                         : 1
+OsOrganization                                          : 
+OsArchitecture                                          : 64-разрядная
+OsLanguage                                              : ru-RU
+OsProductSuites                                         : {TerminalServicesSingleSession}
+OsOtherTypeDescription                                  : 
+OsPAEEnabled                                            : 
+OsPortableOperatingSystem                               : False
+OsPrimary                                               : True
+OsProductType                                           : WorkStation
+OsRegisteredUser                                        : Admin
+OsSerialNumber                                          : 00425-00000-00002-AA843
+OsServicePackMajorVersion                               : 0
+OsServicePackMinorVersion                               : 0
+OsStatus                                                : OK
+OsSuites                                                : {TerminalServices, TerminalServicesSingleSession}
+OsServerLevel                                           : 
+KeyboardLayout                                          : ru-RU
+TimeZone                                                : (UTC+03:00) Москва, Санкт-Петербург
+LogonServer                                             : \\DESKTOP-8NK7C7U
+PowerPlatformRole                                       : Desktop
+HyperVisorPresent                                       : True
+HyperVRequirementDataExecutionPreventionAvailable       : 
+HyperVRequirementSecondLevelAddressTranslation          : 
+HyperVRequirementVirtualizationFirmwareEnabled          : 
+HyperVRequirementVMMonitorModeExtensions                : 
+DeviceGuardSmartStatus                                  : Off
+DeviceGuardRequiredSecurityProperties                   : 
+DeviceGuardAvailableSecurityProperties                  : 
+DeviceGuardSecurityServicesConfigured                   : 
+DeviceGuardSecurityServicesRunning                      : 
+DeviceGuardCodeIntegrityPolicyEnforcementStatus         : 
+DeviceGuardUserModeCodeIntegrityPolicyEnforcementStatus :
